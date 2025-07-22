@@ -1,0 +1,869 @@
+[
+  {
+    "id": "assemblia-2025",
+    "name": "Assemblia",
+    "description": "Builds highly customized AI automations to help government relations teams monitor, analyze and report on legislative activity. Our platform streamlines complex regulatory tracking across multiple jurisdictions, providing real-time alerts and comprehensive compliance reporting for organizations navigating the complex world of government affairs.",
+    "category": "Government Technology",
+    "subcategory": "Regulatory Compliance",
+    "foundedYear": 2023,
+    "website": "https://assemblia.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Maria Santos",
+      "João Silva"
+    ],
+    "location": "Lisbon, Portugal",
+    "tags": [
+      "AI",
+      "Government",
+      "Compliance",
+      "Automation",
+      "Legislative Tracking"
+    ],
+    "revenue": "$150K ARR",
+    "employees": "5-10",
+    "funding": "$120K",
+    "lastUpdate": "2025-03-15",
+    "logo": "/logos/assemblia.png"
+  },
+  {
+    "id": "4admin-2025",
+    "name": "4admin",
+    "description": "Helps financial advisers scale using AI purpose-built for their complex back-office operations. Our intelligent automation platform handles compliance documentation, client onboarding, and regulatory reporting, allowing advisers to focus on what matters most - serving their clients and growing their practice.",
+    "category": "Financial Technology",
+    "subcategory": "Practice Management",
+    "foundedYear": 2022,
+    "website": "https://4admin.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "James Thompson",
+      "Sarah Mitchell"
+    ],
+    "location": "London, UK",
+    "tags": [
+      "FinTech",
+      "AI",
+      "Compliance",
+      "Financial Advisory",
+      "Automation"
+    ],
+    "revenue": "$200K ARR",
+    "employees": "8-15",
+    "funding": "$180K",
+    "lastUpdate": "2025-04-10",
+    "logo": "/logos/4admin.png"
+  },
+  {
+    "id": "cargofax-2025",
+    "name": "CargoFax",
+    "description": "Offers a web-based platform that democratizes trade data, providing actionable insights through visualizations. We help import/export businesses, freight forwarders, and trade analysts make data-driven decisions by transforming complex shipping and customs data into clear, actionable intelligence.",
+    "category": "Logistics & Supply Chain",
+    "subcategory": "Trade Analytics",
+    "foundedYear": 2023,
+    "website": "https://cargofax.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Carlos Rodriguez",
+      "Ana Paula Costa"
+    ],
+    "location": "Miami, FL / São Paulo, Brazil",
+    "tags": [
+      "Logistics",
+      "Trade Data",
+      "Analytics",
+      "Import/Export",
+      "Visualization"
+    ],
+    "revenue": "$180K ARR",
+    "employees": "6-12",
+    "funding": "$150K",
+    "lastUpdate": "2025-05-02",
+    "logo": "/logos/cargofax.png"
+  },
+  {
+    "id": "datapeers-2025",
+    "name": "Datapeers",
+    "description": "An AI revenue workforce for real estate companies. Our platform combines artificial intelligence with real estate expertise to automate lead qualification, property valuation, and customer relationship management, helping real estate professionals close more deals faster while reducing operational overhead.",
+    "category": "Real Estate Technology",
+    "subcategory": "Sales Automation",
+    "foundedYear": 2023,
+    "website": "https://datapeers.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Miguel Fernandez",
+      "Isabella Garcia"
+    ],
+    "location": "Bogotá, Colombia",
+    "tags": [
+      "Real Estate",
+      "AI",
+      "CRM",
+      "Lead Generation",
+      "Property Valuation"
+    ],
+    "revenue": "$120K ARR",
+    "employees": "4-8",
+    "funding": "$120K",
+    "lastUpdate": "2025-03-28",
+    "logo": "/logos/datapeers.png"
+  },
+  {
+    "id": "hothawk-2025",
+    "name": "HotHawk",
+    "description": "An email client designed for how lead generation agencies run cold email for their clients. Built specifically for agencies managing multiple client campaigns, HotHawk provides advanced deliverability features, campaign analytics, and white-label reporting that helps agencies scale their cold email operations profitably.",
+    "category": "Marketing Technology",
+    "subcategory": "Email Marketing",
+    "foundedYear": 2023,
+    "website": "https://hothawk.io/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Alex Petrov",
+      "Emma Richardson"
+    ],
+    "location": "Manchester, UK / Kyiv, Ukraine",
+    "tags": [
+      "Email Marketing",
+      "Cold Email",
+      "Lead Generation",
+      "Agency Tools",
+      "B2B Sales"
+    ],
+    "revenue": "$160K ARR",
+    "employees": "7-12",
+    "funding": "$180K",
+    "lastUpdate": "2025-04-18",
+    "logo": "/logos/hothawk.png"
+  },
+  {
+    "id": "inbox-zero-2025",
+    "name": "Inbox Zero",
+    "description": "Intelligent email assistant that automatically sorts messages and prepares tailored responses, cutting email time in half. Using advanced AI and natural language processing, Inbox Zero learns your communication patterns and priorities to help you achieve true email productivity and work-life balance.",
+    "category": "Productivity",
+    "subcategory": "Email Management",
+    "foundedYear": 2022,
+    "website": "https://inboxzero.ai/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "David Cohen",
+      "Rachel Goldberg"
+    ],
+    "location": "Tel Aviv, Israel",
+    "tags": [
+      "Productivity",
+      "AI",
+      "Email Management",
+      "Automation",
+      "Personal Assistant"
+    ],
+    "revenue": "$220K ARR",
+    "employees": "9-15",
+    "funding": "$180K",
+    "lastUpdate": "2025-05-12",
+    "logo": "/logos/inbox-zero.png"
+  },
+  {
+    "id": "leadtruffle-2025",
+    "name": "LeadTruffle",
+    "description": "Helps local businesses turn website visitors and missed calls into paying customers with 24/7 AI-powered text messaging. Our conversational AI platform engages prospects instantly, qualifies leads automatically, and schedules appointments seamlessly, ensuring no opportunity is ever missed.",
+    "category": "Customer Communication",
+    "subcategory": "Lead Conversion",
+    "foundedYear": 2023,
+    "website": "https://leadtruffle.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Michael Johnson",
+      "Lisa Williams"
+    ],
+    "location": "Columbus, OH / Austin, TX",
+    "tags": [
+      "Local Business",
+      "Lead Generation",
+      "AI Chat",
+      "SMS Marketing",
+      "Conversion"
+    ],
+    "revenue": "$140K ARR",
+    "employees": "5-10",
+    "funding": "$180K",
+    "lastUpdate": "2025-05-19",
+    "logo": "/logos/leadtruffle.png"
+  },
+  {
+    "id": "outboundlegal-2025",
+    "name": "OutboundLegal",
+    "description": "Delivers consistent client acquisition for personal injury attorneys through automated, targeted marketing. Our platform combines legal industry expertise with advanced digital marketing automation to help law firms generate qualified leads while maintaining compliance with legal advertising regulations.",
+    "category": "Legal Technology",
+    "subcategory": "Marketing Automation",
+    "foundedYear": 2022,
+    "website": "https://outboundlegal.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Robert Chen",
+      "Amanda Foster"
+    ],
+    "location": "Newark, NJ",
+    "tags": [
+      "Legal Tech",
+      "Marketing Automation",
+      "Personal Injury",
+      "Lead Generation",
+      "Compliance"
+    ],
+    "revenue": "$190K ARR",
+    "employees": "8-12",
+    "funding": "$150K",
+    "lastUpdate": "2025-04-25",
+    "logo": "/logos/outboundlegal.png"
+  },
+  {
+    "id": "ppc-assist-2025",
+    "name": "PPC Assist",
+    "description": "Helps Amazon sellers increase profits and save time with automation and an AI assistant. Our comprehensive platform optimizes Amazon PPC campaigns, automates bid management, and provides intelligent insights to help sellers maximize their return on ad spend while scaling their Amazon business efficiently.",
+    "category": "E-commerce",
+    "subcategory": "Amazon Tools",
+    "foundedYear": 2023,
+    "website": "https://ppcassist.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Pierre Dubois",
+      "Marie Laurent"
+    ],
+    "location": "Lyon, France",
+    "tags": [
+      "E-commerce",
+      "Amazon",
+      "PPC",
+      "AI",
+      "Automation",
+      "Advertising"
+    ],
+    "revenue": "$170K ARR",
+    "employees": "6-10",
+    "funding": "$120K",
+    "lastUpdate": "2025-03-20",
+    "logo": "/logos/ppc-assist.png"
+  },
+  {
+    "id": "rootabl-2025",
+    "name": "Rootabl",
+    "description": "All-in-one affiliate platform designed for online course creators and community builders that automates tracking, payouts, and partner management. Rootabl simplifies affiliate marketing for digital educators, providing comprehensive analytics and seamless integration with popular course platforms.",
+    "category": "Creator Economy",
+    "subcategory": "Affiliate Marketing",
+    "foundedYear": 2022,
+    "website": "https://rootabl.com/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Jessica Parker",
+      "Kevin Murphy"
+    ],
+    "location": "Portland, ME",
+    "tags": [
+      "Creator Economy",
+      "Affiliate Marketing",
+      "Online Courses",
+      "Community",
+      "Education"
+    ],
+    "revenue": "$130K ARR",
+    "employees": "4-8",
+    "funding": "$120K",
+    "lastUpdate": "2025-04-08",
+    "logo": "/logos/rootabl.png"
+  },
+  {
+    "id": "sombra-2025",
+    "name": "Sombra",
+    "description": "Provides financial firms a secure system to capture client conversations and generate compliant reports. Our platform ensures regulatory compliance while maintaining the highest security standards, helping financial advisors document client interactions and generate required compliance documentation automatically.",
+    "category": "Financial Technology",
+    "subcategory": "Compliance & Documentation",
+    "foundedYear": 2023,
+    "website": "https://sombra.finance/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Klaus Weber",
+      "Sophie Anderson"
+    ],
+    "location": "Berlin, Germany / Sydney, Australia",
+    "tags": [
+      "FinTech",
+      "Compliance",
+      "Security",
+      "Documentation",
+      "Financial Services"
+    ],
+    "revenue": "$110K ARR",
+    "employees": "5-9",
+    "funding": "$150K",
+    "lastUpdate": "2025-03-12",
+    "logo": "/logos/sombra.png"
+  },
+  {
+    "id": "spindle-2025",
+    "name": "Spindle",
+    "description": "Helps companies optimize complex operations with real-time, intelligent tracking of assets, people, and workflows. Our IoT-enabled platform provides comprehensive visibility into business operations, enabling data-driven decisions and operational efficiency improvements across manufacturing, logistics, and service industries.",
+    "category": "Operations Technology",
+    "subcategory": "Asset Tracking",
+    "foundedYear": 2023,
+    "website": "https://spindle.tech/",
+    "status": "Active",
+    "cohort": "2025 Spring",
+    "founders": [
+      "Fernando Silva",
+      "Ricardo Santos"
+    ],
+    "location": "Tampa, FL / Rio de Janeiro, Brazil",
+    "tags": [
+      "IoT",
+      "Asset Tracking",
+      "Operations",
+      "Manufacturing",
+      "Analytics"
+    ],
+    "revenue": "$160K ARR",
+    "employees": "7-12",
+    "funding": "$180K",
+    "lastUpdate": "2025-05-05",
+    "logo": "/logos/spindle.png"
+  },
+  {
+    "id": "checkout-page-2024",
+    "name": "Checkout Page",
+    "description": "Transforming how businesses accept payments online with a flexible, no-code checkout page builder. Our platform enables businesses to create beautiful, conversion-optimized checkout experiences without technical expertise, supporting multiple payment methods and providing detailed analytics to maximize revenue.",
+    "category": "E-commerce",
+    "subcategory": "Payment Processing",
+    "foundedYear": 2018,
+    "website": "https://checkoutpage.com/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Sander Goudswaard"
+    ],
+    "location": "Amsterdam, Netherlands",
+    "tags": [
+      "E-commerce",
+      "Payments",
+      "No-Code",
+      "Conversion Optimization",
+      "SaaS"
+    ],
+    "revenue": "$1.5M ARR",
+    "employees": "15-25",
+    "funding": "$150K",
+    "lastUpdate": "2024-11-20",
+    "logo": "/logos/checkout-page.png"
+  },
+  {
+    "id": "easyreview-2024",
+    "name": "easyreview",
+    "description": "A powerful talent management platform that helps busy HR teams foster a more engaged, high-performing, and loyal workforce. Our comprehensive solution streamlines performance reviews, goal setting, and employee development, making talent management efficient and effective for growing companies.",
+    "category": "Human Resources",
+    "subcategory": "Performance Management",
+    "foundedYear": 2021,
+    "website": "https://easyreview.com/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Hans Mueller",
+      "Anna Schmidt"
+    ],
+    "location": "Munich, Germany",
+    "tags": [
+      "HR Tech",
+      "Performance Management",
+      "Employee Engagement",
+      "Talent Management",
+      "Workforce"
+    ],
+    "revenue": "$280K ARR",
+    "employees": "12-18",
+    "funding": "$150K",
+    "lastUpdate": "2024-12-05",
+    "logo": "/logos/easyreview.png"
+  },
+  {
+    "id": "marllm-2024",
+    "name": "Marllm",
+    "description": "Helps businesses scale customized sales funnels using human-centric content AI co-workers. Our platform creates personalized sales experiences at scale by leveraging AI to understand customer behavior patterns and generate contextually relevant content that drives conversions.",
+    "category": "Marketing Technology",
+    "subcategory": "Sales Funnel Optimization",
+    "foundedYear": 2023,
+    "website": "https://marllm.com/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Oliver Smith",
+      "Charlotte Davis"
+    ],
+    "location": "Edinburgh, UK",
+    "tags": [
+      "AI",
+      "Sales Funnels",
+      "Content Marketing",
+      "Personalization",
+      "Conversion"
+    ],
+    "revenue": "$120K ARR",
+    "employees": "6-10",
+    "funding": "$120K",
+    "lastUpdate": "2024-10-15",
+    "logo": "/logos/marllm.png"
+  },
+  {
+    "id": "oneaccord-2024",
+    "name": "OneAccord",
+    "description": "A live AI translation platform for churches, bridging language gaps to make church services accessible to everyone. Our real-time translation technology enables multilingual congregations to worship together, supporting dozens of languages with accuracy and cultural sensitivity.",
+    "category": "Faith Technology",
+    "subcategory": "Translation Services",
+    "foundedYear": 2022,
+    "website": "https://oneaccord.live/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Pastor Jonathan Lee",
+      "Maria Gonzalez"
+    ],
+    "location": "Nashville, TN",
+    "tags": [
+      "Faith Tech",
+      "Translation",
+      "AI",
+      "Accessibility",
+      "Community"
+    ],
+    "revenue": "$95K ARR",
+    "employees": "5-8",
+    "funding": "$120K",
+    "lastUpdate": "2024-11-08",
+    "logo": "/logos/oneaccord.png"
+  },
+  {
+    "id": "remea-2024",
+    "name": "Remea",
+    "description": "Provides a smart EV charging management platform tailored for businesses in the hospitality and SMB sectors. Our solution helps hotels, restaurants, and small businesses offer convenient EV charging to customers while optimizing energy costs and generating additional revenue streams.",
+    "category": "Clean Technology",
+    "subcategory": "EV Infrastructure",
+    "foundedYear": 2022,
+    "website": "https://remea.com/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Erik Olsen",
+      "Astrid Hansen"
+    ],
+    "location": "Oslo, Norway",
+    "tags": [
+      "Clean Tech",
+      "EV Charging",
+      "Hospitality",
+      "Energy Management",
+      "Sustainability"
+    ],
+    "revenue": "$140K ARR",
+    "employees": "8-12",
+    "funding": "$150K",
+    "lastUpdate": "2024-12-12",
+    "logo": "/logos/remea.png"
+  },
+  {
+    "id": "wrenly-2024",
+    "name": "Wrenly",
+    "description": "An AI-powered tool in Slack/Teams for gathering feedback and offering actionable insights to leadership. Wrenly transforms workplace communication by automatically analyzing team sentiment, identifying potential issues early, and providing leaders with data-driven insights to improve team performance and satisfaction.",
+    "category": "Workplace Technology",
+    "subcategory": "Team Communication",
+    "foundedYear": 2022,
+    "website": "https://wrenly.com/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Alex Thompson",
+      "Sarah Kim"
+    ],
+    "location": "San Francisco, CA",
+    "tags": [
+      "AI",
+      "Team Communication",
+      "Feedback",
+      "Analytics",
+      "Slack",
+      "Microsoft Teams"
+    ],
+    "revenue": "$180K ARR",
+    "employees": "7-11",
+    "funding": "$150K",
+    "lastUpdate": "2024-11-25",
+    "logo": "/logos/wrenly.png"
+  },
+  {
+    "id": "vocala-2024",
+    "name": "Vocala Smart Properties",
+    "description": "Provides fleet-managed, Technology Enabled Care solutions that leverage Alexa devices to enhance senior living experiences. Our platform enables assisted living facilities and senior care providers to deliver personalized care, emergency response, and family connectivity through voice technology.",
+    "category": "Healthcare Technology",
+    "subcategory": "Senior Care",
+    "foundedYear": 2021,
+    "website": "https://vocala.com/",
+    "status": "Active",
+    "cohort": "2024 Fall",
+    "founders": [
+      "Dr. Michael Rodriguez",
+      "Jennifer Walsh"
+    ],
+    "location": "Phoenix, AZ",
+    "tags": [
+      "Healthcare",
+      "Senior Care",
+      "Voice Technology",
+      "Alexa",
+      "Assisted Living"
+    ],
+    "revenue": "$220K ARR",
+    "employees": "10-15",
+    "funding": "$180K",
+    "lastUpdate": "2024-10-30",
+    "logo": "/logos/vocala.png"
+  },
+  {
+    "id": "reviewflowz-2024",
+    "name": "Reviewflowz",
+    "description": "Helps SaaS companies optimize their visibility on software review platforms and collect, aggregate, manage, and showcase customer reviews and testimonials. Our platform automates review collection, monitors brand reputation across multiple platforms, and provides insights to improve customer satisfaction.",
+    "category": "Marketing Technology",
+    "subcategory": "Review Management",
+    "foundedYear": 2023,
+    "website": "https://reviewflowz.com/",
+    "status": "Active",
+    "cohort": "2024 Spring",
+    "founders": [
+      "Jean-Baptiste Martin",
+      "Amélie Dubois"
+    ],
+    "location": "Paris, France",
+    "tags": [
+      "SaaS",
+      "Review Management",
+      "Reputation",
+      "Customer Feedback",
+      "Marketing"
+    ],
+    "revenue": "$160K ARR",
+    "employees": "6-9",
+    "funding": "$150K",
+    "lastUpdate": "2024-09-18",
+    "logo": "/logos/reviewflowz.png"
+  },
+  {
+    "id": "sanoflow-2024",
+    "name": "Sanoflow",
+    "description": "An omnichannel conversational commerce platform that helps businesses to sell more on chat platforms like WhatsApp, Instagram, and more. Our AI-powered solution enables businesses to create seamless shopping experiences across messaging platforms, increasing conversion rates and customer engagement.",
+    "category": "E-commerce",
+    "subcategory": "Conversational Commerce",
+    "foundedYear": 2022,
+    "website": "https://sanoflow.com/",
+    "status": "Active",
+    "cohort": "2024 Spring",
+    "founders": [
+      "Ahmed Al-Rashid",
+      "Fatima Hassan"
+    ],
+    "location": "Dubai, UAE",
+    "tags": [
+      "E-commerce",
+      "Conversational Commerce",
+      "WhatsApp",
+      "AI Chat",
+      "Social Commerce"
+    ],
+    "revenue": "$210K ARR",
+    "employees": "9-14",
+    "funding": "$150K",
+    "lastUpdate": "2024-08-22",
+    "logo": "/logos/sanoflow.png"
+  },
+  {
+    "id": "squadcast-2021",
+    "name": "SquadCast",
+    "description": "High-quality remote podcast recording platform that ensures crystal-clear audio for professional podcasters. SquadCast revolutionized remote podcast production by providing studio-quality recordings from anywhere in the world, enabling the creator economy boom in audio content.",
+    "category": "Creator Economy",
+    "subcategory": "Podcast Technology",
+    "foundedYear": 2018,
+    "website": "https://squadcast.fm/",
+    "status": "Acquired",
+    "cohort": "2020 Fall",
+    "founders": [
+      "Zach Moreno",
+      "Rock Felder"
+    ],
+    "location": "Ann Arbor, MI",
+    "tags": [
+      "Podcasting",
+      "Audio",
+      "Remote Recording",
+      "Creator Tools",
+      "Media"
+    ],
+    "revenue": "$3M ARR",
+    "employees": "25-50",
+    "funding": "$120K",
+    "lastUpdate": "2023-08-15",
+    "logo": "/logos/squadcast.png"
+  },
+  {
+    "id": "processtreet-2020",
+    "name": "Process Street",
+    "description": "Workflow management software that helps teams create, track, and optimize recurring business processes. Process Street transforms chaotic workflows into systematic, repeatable processes that ensure consistency, compliance, and continuous improvement across organizations.",
+    "category": "Productivity",
+    "subcategory": "Workflow Management",
+    "foundedYear": 2014,
+    "website": "https://www.process.st/",
+    "status": "Active",
+    "cohort": "2020 Fall",
+    "founders": [
+      "Vinay Patil",
+      "Cameron McKay"
+    ],
+    "location": "London, UK",
+    "tags": [
+      "Workflow",
+      "Process Management",
+      "Automation",
+      "Compliance",
+      "Business Operations"
+    ],
+    "revenue": "$2.1M ARR",
+    "employees": "35-50",
+    "funding": "$120K",
+    "lastUpdate": "2024-01-10",
+    "logo": "/logos/processtreet.png"
+  },
+  {
+    "id": "userpilot-2020",
+    "name": "Userpilot",
+    "description": "Product growth platform that helps SaaS companies increase user activation, feature adoption, and customer retention through personalized in-app experiences. Userpilot enables product teams to create guided tours, tooltips, and contextual messaging without requiring engineering resources.",
+    "category": "Product Management",
+    "subcategory": "User Onboarding",
+    "foundedYear": 2017,
+    "website": "https://userpilot.com/",
+    "status": "Active",
+    "cohort": "2020 Spring",
+    "founders": [
+      "Tal Raviv",
+      "Yazan Sehwail"
+    ],
+    "location": "London, UK",
+    "tags": [
+      "Product Management",
+      "User Onboarding",
+      "SaaS",
+      "Customer Success",
+      "Growth"
+    ],
+    "revenue": "$4.2M ARR",
+    "employees": "50-75",
+    "funding": "$120K",
+    "lastUpdate": "2024-02-28",
+    "logo": "/logos/userpilot.png"
+  },
+  {
+    "id": "testimonial-2020",
+    "name": "Testimonial",
+    "description": "Video testimonial collection platform that helps businesses gather authentic customer stories to boost conversions and build trust. Testimonial simplifies the process of collecting, managing, and showcasing customer testimonials across websites, marketing campaigns, and sales materials.",
+    "category": "Marketing Technology",
+    "subcategory": "Social Proof",
+    "foundedYear": 2020,
+    "website": "https://testimonial.to/",
+    "status": "Active",
+    "cohort": "2020 Fall",
+    "founders": [
+      "Dani Grant",
+      "Kevin Liu"
+    ],
+    "location": "San Francisco, CA",
+    "tags": [
+      "Marketing",
+      "Video Testimonials",
+      "Social Proof",
+      "Conversion Optimization",
+      "Customer Stories"
+    ],
+    "revenue": "$850K ARR",
+    "employees": "8-12",
+    "funding": "$120K",
+    "lastUpdate": "2024-03-15",
+    "logo": "/logos/testimonial.png"
+  },
+  {
+    "id": "chartmogul-2019",
+    "name": "ChartMogul",
+    "description": "Subscription analytics platform that helps SaaS businesses measure, understand, and grow their recurring revenue. ChartMogul provides comprehensive metrics and insights for subscription businesses, enabling data-driven decisions around customer acquisition, retention, and revenue optimization.",
+    "category": "Analytics",
+    "subcategory": "Subscription Analytics",
+    "foundedYear": 2014,
+    "website": "https://chartmogul.com/",
+    "status": "Active",
+    "cohort": "2019 Spring",
+    "founders": [
+      "Nick Franklin",
+      "Ed Shelley"
+    ],
+    "location": "Berlin, Germany",
+    "tags": [
+      "Analytics",
+      "SaaS Metrics",
+      "Subscription",
+      "Revenue Analytics",
+      "Business Intelligence"
+    ],
+    "revenue": "$5.8M ARR",
+    "employees": "75-100",
+    "funding": "$120K",
+    "lastUpdate": "2024-01-22",
+    "logo": "/logos/chartmogul.png"
+  },
+  {
+    "id": "referralcandy-2019",
+    "name": "ReferralCandy",
+    "description": "Referral marketing platform that helps e-commerce brands set up and automate customer referral programs. ReferralCandy transforms satisfied customers into brand advocates by making it easy to refer friends and family, driving organic growth through word-of-mouth marketing.",
+    "category": "E-commerce",
+    "subcategory": "Referral Marketing",
+    "foundedYear": 2012,
+    "website": "https://referralcandy.com/",
+    "status": "Active",
+    "cohort": "2019 Fall",
+    "founders": [
+      "Dinesh Chugtai",
+      "Jaime Cham"
+    ],
+    "location": "Singapore",
+    "tags": [
+      "E-commerce",
+      "Referral Marketing",
+      "Word-of-mouth",
+      "Customer Acquisition",
+      "Growth"
+    ],
+    "revenue": "$3.2M ARR",
+    "employees": "25-35",
+    "funding": "$120K",
+    "lastUpdate": "2023-12-08",
+    "logo": "/logos/referralcandy.png"
+  },
+  {
+    "id": "feedback-fish-2021",
+    "name": "Feedback Fish",
+    "description": "Simple and beautiful feedback widget for websites and web applications. Feedback Fish helps product teams collect user feedback effortlessly with customizable widgets that blend seamlessly into any website design, providing valuable insights for product improvement.",
+    "category": "Product Management",
+    "subcategory": "Feedback Collection",
+    "foundedYear": 2020,
+    "website": "https://feedback.fish/",
+    "status": "Active",
+    "cohort": "2021 Spring",
+    "founders": [
+      "Arjun Agarwal"
+    ],
+    "location": "San Francisco, CA",
+    "tags": [
+      "Product Management",
+      "Feedback",
+      "User Experience",
+      "Widget",
+      "Customer Insights"
+    ],
+    "revenue": "$145K ARR",
+    "employees": "3-5",
+    "funding": "$60K",
+    "lastUpdate": "2024-01-05",
+    "logo": "/logos/feedback-fish.png"
+  },
+  {
+    "id": "postmark-2019",
+    "name": "Postmark",
+    "description": "Reliable email delivery service for web applications, focusing on transactional emails. Postmark ensures critical emails like password resets, order confirmations, and notifications reach customers' inboxes quickly and reliably, with detailed analytics and deliverability insights.",
+    "category": "Email Technology",
+    "subcategory": "Transactional Email",
+    "foundedYear": 2009,
+    "website": "https://postmarkapp.com/",
+    "status": "Active",
+    "cohort": "2019 Spring",
+    "founders": [
+      "Chris Nagele",
+      "Andrew Storms"
+    ],
+    "location": "Philadelphia, PA",
+    "tags": [
+      "Email Delivery",
+      "Transactional Email",
+      "Infrastructure",
+      "Developer Tools",
+      "Reliability"
+    ],
+    "revenue": "$8.5M ARR",
+    "employees": "35-50",
+    "funding": "$120K",
+    "lastUpdate": "2023-11-30",
+    "logo": "/logos/postmark.png"
+  },
+  {
+    "id": "closehq-2021",
+    "name": "Close",
+    "description": "CRM built for inside sales teams that combines email, calling, and lead management in one platform. Close helps sales teams have more conversations and close more deals by providing a unified workspace for all customer interactions, with powerful automation and analytics.",
+    "category": "Sales Technology",
+    "subcategory": "CRM",
+    "foundedYear": 2013,
+    "website": "https://close.com/",
+    "status": "Active",
+    "cohort": "2021 Fall",
+    "founders": [
+      "Steli Efti",
+      "Anthony Nemitz"
+    ],
+    "location": "San Francisco, CA",
+    "tags": [
+      "CRM",
+      "Sales",
+      "Inside Sales",
+      "Lead Management",
+      "Communication"
+    ],
+    "revenue": "$12M ARR",
+    "employees": "100-150",
+    "funding": "$180K",
+    "lastUpdate": "2024-02-14",
+    "logo": "/logos/close.png"
+  },
+  {
+    "id": "bannerbear-2020",
+    "name": "Bannerbear",
+    "description": "API for auto-generating images, videos, and other media through templates and API calls. Bannerbear helps developers and marketers create personalized visual content at scale, perfect for social media automation, e-commerce product images, and dynamic marketing campaigns.",
+    "category": "Developer Tools",
+    "subcategory": "Media Generation",
+    "foundedYear": 2019,
+    "website": "https://bannerbear.com/",
+    "status": "Active",
+    "cohort": "2020 Spring",
+    "founders": [
+      "Jon Yongfook"
+    ],
+    "location": "Singapore",
+    "tags": [
+      "API",
+      "Image Generation",
+      "Automation",
+      "Developer Tools",
+      "Visual Content"
+    ],
+    "revenue": "$420K ARR",
+    "employees": "5-8",
+    "funding": "$60K",
+    "lastUpdate": "2024-03-08",
+    "logo": "/logos/bannerbear.png"
+  }
+]
