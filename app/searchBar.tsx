@@ -124,7 +124,7 @@ export default function SearchBar({
           disabled={isLoading}
           className={`px-4 border border-gray-300 ${filters.showPodcastOnly 
             ? 'bg-[#D4A13C] text-white border-[#D4A13C]' 
-            : 'text-black bg-white border-white hover:bg-[#D4A13C] hover:text-white hover:border-[#D4A13C] focus:bg-gray-300'
+            : 'text-black bg-white border-white'
           }`}
         >
           <Mic className="h-4 w-4 mr-2" />
