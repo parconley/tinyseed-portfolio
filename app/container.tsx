@@ -156,7 +156,7 @@ export default function Container({
           const companyText = (company.description || '').toLowerCase();
           
           // Handle synonyms and variations
-          const synonymMap = {
+          const synonymMap: Record<string, string[]> = {
             'e-commerce': ['ecommerce', 'e-commerce', 'commerce', 'online store', 'retail'],
             'ecommerce': ['ecommerce', 'e-commerce', 'commerce', 'online store', 'retail'],
             'podcasting': ['podcast', 'podcasting', 'podcasts', 'audio'],
@@ -177,9 +177,15 @@ export default function Container({
             if (companyText.includes(word)) return true;
             
             // Check synonyms
-            const synonyms = synonymMap[word] || synonymMap[lowercaseQuery];
-            if (synonyms) {
-              return synonyms.some(synonym => companyText.includes(synonym));
+            const wordSynonyms = synonymMap[word];
+            const querySynonyms = synonymMap[lowercaseQuery];
+            
+            if (wordSynonyms) {
+              return wordSynonyms.some(synonym => companyText.includes(synonym));
+            }
+            
+            if (querySynonyms) {
+              return querySynonyms.some(synonym => companyText.includes(synonym));
             }
             
             return false;

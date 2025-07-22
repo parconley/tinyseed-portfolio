@@ -61,6 +61,11 @@ export default function TopHeader({
       </p>
       
       <p className="text-sm text-gray-300 mb-4 text-left">
+        Unlike typical VC-backed startups, TinySeed companies are real case studies in bootstrapping—profitable, sustainable businesses 
+        built without venture capital&apos;s "growth at all costs" mentality. Perfect for studying how to actually build and grow a business.
+      </p>
+      
+      <p className="text-sm text-gray-300 mb-4 text-left">
         Search through all their portfolio companies using hybrid AI-powered search. It combines semantic understanding with precise keyword matching 
         to find exactly what you&apos;re looking for while handling synonyms and variations automatically.
       </p>
