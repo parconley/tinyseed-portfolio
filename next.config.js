@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // (Optional) Export as a standalone site
-    // See https://nextjs.org/docs/pages/api-reference/next-config-js/output#automatically-copying-traced-files
-    // output: 'standalone', // Feel free to modify/remove this option
+    // Export as static HTML for GitHub Pages
+    output: 'export',
+    
+    // GitHub Pages serves from subdirectory if not using custom domain
+    // Update this if your repo name is different
+    basePath: process.env.NODE_ENV === 'production' ? '/tinyseed-portfolio' : '',
+    
+    // Disable image optimization for static export
+    images: {
+        unoptimized: true,
+    },
 
     // Indicate that these packages should not be bundled by webpack
     experimental: {

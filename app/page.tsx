@@ -56,8 +56,9 @@ export default function Page() {
             </Link>
             <Link 
               className="text-base text-gray-600 hover:text-gray-900 transition-colors" 
-              href="#"
-              onClick={(e) => e.preventDefault()}
+              href="https://github.com/parconley/tinyseed-portfolio/blob/main/tinyseed-portfolio/tinyseed_portfolio_companies_extracted.csv"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               data
             </Link>
@@ -122,11 +123,7 @@ export default function Page() {
             <Link href="https://www.startupsfortherestofus.com/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Startups for the Rest of Us
             </Link>{' '}
-            episodes, so that{' '}
-            <Link href="https://parconley.com/library-of-bootstrapped-saas-case-studies/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
-              I could binge them
-            </Link>
-            .
+            episodes (note: the podcast link detection isn't 100% accurate).
           </p>
           <p className="text-sm text-gray-600">
             Last updated July 21st, 2025 with up to the 2025 Spring Cohort.
