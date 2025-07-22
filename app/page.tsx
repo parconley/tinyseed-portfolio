@@ -73,6 +73,7 @@ export default function Page() {
           cohorts={filterOptions.cohorts}
           locations={filterOptions.locations}
           searchQuery={searchQuery}
+          currentFilters={searchFilters}
         />
 
         {/* Search Section */}

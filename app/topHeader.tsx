@@ -10,6 +10,7 @@ interface TopHeaderProps {
   cohorts?: string[];
   locations?: string[];
   searchQuery?: string;
+  currentFilters?: SearchFilters;
 }
 
 export default function TopHeader({ 
@@ -19,22 +20,24 @@ export default function TopHeader({
   categories = [], 
   cohorts = [], 
   locations = [],
-  searchQuery = ''
+  searchQuery = '',
+  currentFilters = {}
 }: TopHeaderProps) {
   const suggestions = [
     "CRM",
     "E-commerce",
     "Human Resources",
-    "FinTech",
+    "Finance",
     "Real Estate",
     "Industrials",
     "Service Businesses",
     "Marketing",
-    "EdTech",
+    "Education",
     "Transportation",
     "Consumer",
-    "Asset Management",
-    "Supply Chain and Logistics"
+    "Email",
+    "Supply Chain and Logistics",
+    "Churches"
   ];
 
   return (
@@ -79,6 +82,7 @@ export default function TopHeader({
             locations={locations}
             placeholder="Search project descriptions..."
             searchQuery={searchQuery}
+            currentFilters={currentFilters}
           />
         </div>
       )}
@@ -91,7 +95,7 @@ export default function TopHeader({
         {suggestions.map((suggestion, index) => (
           <button
             key={index}
-            onClick={() => onSearch?.(suggestion, {})}
+            onClick={() => onSearch?.(suggestion, currentFilters)}
             className="px-4 py-2 rounded-full text-sm cursor-pointer transition-colors hover:opacity-80"
             style={{ backgroundColor: '#D4A13C', color: 'white' }}
           >

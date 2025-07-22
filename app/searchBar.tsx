@@ -21,6 +21,7 @@ interface SearchBarProps {
   locations?: string[];
   placeholder?: string;
   searchQuery?: string;
+  currentFilters?: SearchFilters;
 }
 
 export default function SearchBar({
@@ -30,7 +31,8 @@ export default function SearchBar({
   cohorts = [],
   locations = [],
   placeholder = "Search project descriptions...",
-  searchQuery = ''
+  searchQuery = '',
+  currentFilters = {}
 }: SearchBarProps) {
   const [query, setQuery] = useState(searchQuery);
 
@@ -38,8 +40,14 @@ export default function SearchBar({
   React.useEffect(() => {
     setQuery(searchQuery);
   }, [searchQuery]);
+  
   const [showFilters, setShowFilters] = useState(false);
-  const [filters, setFilters] = useState<SearchFilters>({});
+  const [filters, setFilters] = useState<SearchFilters>(currentFilters);
+  
+  // Update filters when currentFilters prop changes
+  React.useEffect(() => {
+    setFilters(currentFilters);
+  }, [currentFilters]);
 
   const handleSearch = useCallback(() => {
     onSearch(query, filters);

@@ -271,6 +271,7 @@ export default function Container({
             cohorts={filterOptions.cohorts}
             locations={filterOptions.locations}
             searchQuery={searchQuery}
+            currentFilters={searchFilters}
           />
         </div>
       )}
