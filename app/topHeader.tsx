@@ -62,7 +62,7 @@ export default function TopHeader({
       
       <p className="text-sm text-gray-300 mb-4 text-left">
         Unlike typical VC-backed startups, TinySeed companies are real case studies in bootstrapping—profitable, sustainable businesses 
-        built without venture capital&apos;s "growth at all costs" mentality. Perfect for studying how to actually build and grow a business.
+        built without venture capital&apos;s &ldquo;growth at all costs&rdquo; mentality. Perfect for studying how to actually build and grow a business.
       </p>
       
       <p className="text-sm text-gray-300 mb-4 text-left">
