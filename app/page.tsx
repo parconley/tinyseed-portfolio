@@ -42,21 +42,21 @@ export default function Page() {
           <div className="flex space-x-6">
             <button
               onClick={scrollToAbout}
-              className="text-base text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-base text-gray-600 hover:text-[#D4A13C] transition-colors"
             >
               about
             </button>
             <Link 
-              className="text-base text-gray-600 hover:text-gray-900 transition-colors" 
-              href="https://github.com/yourusername/tinyseed-portfolio"
+              className="text-base text-gray-600 hover:text-[#D4A13C] transition-colors" 
+              href="https://github.com/parconley/tinyseed-portfolio"
               target="_blank"
               rel="noopener noreferrer"
             >
               github
             </Link>
             <Link 
-              className="text-base text-gray-600 hover:text-gray-900 transition-colors" 
-              href="https://github.com/parconley/tinyseed-portfolio/blob/main/tinyseed-portfolio/tinyseed_portfolio_companies_extracted.csv"
+              className="text-base text-gray-600 hover:text-[#D4A13C] transition-colors" 
+              href="https://github.com/parconley/tinyseed-portfolio/blob/main/tinyseed_portfolio_companies_extracted.csv"
               target="_blank"
               rel="noopener noreferrer"
             >
