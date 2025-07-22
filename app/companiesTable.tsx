@@ -208,10 +208,12 @@ export default function CompaniesTable({
                     <button
                       className="h-8 w-8 p-0 flex items-center justify-center cursor-pointer"
                       onClick={() => {
-                        window.open(company.startupsForRestOfUsSearchLink, '_blank');
+                        if (company.startupsForRestOfUsSearchLink) {
+                          window.open(company.startupsForRestOfUsSearchLink, '_blank');
+                        }
                       }}
                       onMouseDown={(e) => {
-                        if (e.button === 1) {
+                        if (e.button === 1 && company.startupsForRestOfUsSearchLink) {
                           e.preventDefault();
                           window.open(company.startupsForRestOfUsSearchLink, '_blank');
                         }

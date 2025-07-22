@@ -167,25 +167,6 @@ export default function SearchBar({
             )}
 
             {/* Status Filter */}
-            <div>
-              <label className="block text-xs font-medium text-gray-600 mb-1">
-                Status
-              </label>
-              <Select
-                value={filters.status || 'all'}
-                onValueChange={(value) => updateFilter('status', value)}
-              >
-                <SelectTrigger className="h-9">
-                  <SelectValue placeholder="All statuses" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All statuses</SelectItem>
-                  <SelectItem value="Active">Active</SelectItem>
-                  <SelectItem value="Acquired">Acquired</SelectItem>
-                  <SelectItem value="Inactive">Inactive</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
 
             {/* Cohort Filter */}
             {cohorts.length > 0 && (

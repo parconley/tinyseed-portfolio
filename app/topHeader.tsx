@@ -48,12 +48,12 @@ export default function TopHeader({
         <a href="https://robwalling.com" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: '#D4A13C' }}>
           Rob Walling
         </a>{' '}
-        and Einar Vollset. It's the first accelerator designed specifically for bootstrappers, investing $120k-$240k in early-stage SaaS companies.
+        and Einar Vollset. It&apos;s the first accelerator designed specifically for bootstrappers, investing $120k-$240k in early-stage SaaS companies.
       </p>
       
       <p className="text-sm text-gray-300 mb-4 text-left">
         Search through all their portfolio companies using semantic search. Instead of requiring exact keyword matches, it uses machine learning 
-        to find companies that are conceptually similar to what you're looking for.
+        to find companies that are conceptually similar to what you&apos;re looking for.
       </p>
 
       <p className="text-sm text-gray-300 mb-6 text-left">

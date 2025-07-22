@@ -101,14 +101,14 @@ export default function Page() {
             . Claude Code helped me build this, using{' '}
             <Link href="https://nabeelqu.co/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Nabeel S. Qureshi
-            </Link>'s{' '}
+            </Link>&apos;s{' '}
             <Link href="https://www.evwinners.org/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               EV Winners
             </Link>{' '}
             and{' '}
             <Link href="https://thesephist.com/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Linus Lee
-            </Link>'s{' '}
+            </Link>&apos;s{' '}
             <Link href="https://ycvibecheck.com/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               YC Vibe Check
             </Link>{' '}
@@ -117,13 +117,13 @@ export default function Page() {
           <p className="text-sm text-gray-600 mb-4">
             Data sourced from{' '}
             <Link href="https://tinyseed.com/portfolio" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
-              TinySeed's portfolio
+              TinySeed&apos;s portfolio
             </Link>{' '}
             page, which I wanted to be more searchable. Specifically, I wanted to know which TinySeed companies had{' '}
             <Link href="https://www.startupsfortherestofus.com/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Startups for the Rest of Us
             </Link>{' '}
-            episodes (note: the podcast link detection isn't 100% accurate).
+            episodes (note: the podcast link detection isn&apos;t 100% accurate).
           </p>
           <p className="text-sm text-gray-600">
             Last updated July 21st, 2025 with up to the 2025 Spring Cohort.
