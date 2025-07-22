@@ -104,9 +104,24 @@ tinyseed-portfolio/
 
 ## Deployment
 
-TinySeed Portfolio is hosted using [GitHub Pages](https://pages.github.com/). The site is automatically deployed when changes are pushed to the main branch.
+TinySeed Portfolio is deployed using [Vercel](https://vercel.com/), which provides automatic deployments, serverless functions, and optimized performance for Next.js applications.
 
-For other deployment platforms, run `npm run build` and deploy the `.next` directory as a Node.js application.
+### Deploying to Vercel
+
+1. Install the Vercel CLI: `npm i -g vercel`
+2. Run `vercel` in the project directory
+3. Follow the prompts to link to your Vercel account
+4. The site will be automatically deployed on each push to the main branch
+
+### Manual deployment
+
+For manual deployments or other platforms:
+```bash
+npm run build
+npm start
+```
+
+The application runs on port 3000 by default.
 
 ## Contributing
 
@@ -117,6 +132,14 @@ Contributions are welcome! If you'd like to add features, fix bugs, or improve t
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+## Related Projects
+
+### Emergent Ventures Winners
+
+This repository also includes **[Emergent Ventures Winners](https://evwinners.org)** (in the `ev-winners` directory), a similar semantic search interface for browsing recipients of the Emergent Ventures fellowship and grant program. The project uses the same underlying technology stack and search approach to help discover grantees working on innovative projects across various fields.
+
+For more information about the EV Winners project, see the [ev-winners README](../ev-winners/README.md).
 
 ## Contact and More Information
 
