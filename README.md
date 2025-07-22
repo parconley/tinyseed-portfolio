@@ -68,7 +68,7 @@ TinySeed Portfolio is built with modern web technologies. Here's how to get star
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tinyseed-portfolio.git
+git clone https://github.com/parconley/tinyseed-portfolio.git
 cd tinyseed-portfolio/tinyseed-portfolio
 
 # Install dependencies
