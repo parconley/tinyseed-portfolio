@@ -9,6 +9,7 @@ interface TopHeaderProps {
   categories?: string[];
   cohorts?: string[];
   locations?: string[];
+  searchQuery?: string;
 }
 
 export default function TopHeader({ 
@@ -17,20 +18,23 @@ export default function TopHeader({
   isLoading = false, 
   categories = [], 
   cohorts = [], 
-  locations = [] 
+  locations = [],
+  searchQuery = ''
 }: TopHeaderProps) {
   const suggestions = [
-    "SaaS tools",
-    "B2B software",
-    "Developer tools",
-    "Analytics platforms",
-    "Marketing automation",
-    "AI and machine learning",
-    "E-commerce solutions",
-    "Productivity apps",
-    "HR tech",
+    "CRM",
+    "E-commerce",
+    "Human Resources",
     "FinTech",
-    "EdTech"
+    "Real Estate",
+    "Industrials",
+    "Service Businesses",
+    "Marketing",
+    "EdTech",
+    "Transportation",
+    "Consumer",
+    "Asset Management",
+    "Supply Chain and Logistics"
   ];
 
   return (
@@ -74,6 +78,7 @@ export default function TopHeader({
             cohorts={cohorts}
             locations={locations}
             placeholder="Search project descriptions..."
+            searchQuery={searchQuery}
           />
         </div>
       )}

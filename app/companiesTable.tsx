@@ -33,7 +33,7 @@ export default function CompaniesTable({
   onSort,
   sortKey,
   sortOrder,
-  isLoading = false
+  isLoading = false,
 }: CompaniesTableProps) {
   const handleSort = (key: SortKey) => {
     if (key === sortKey) {
@@ -59,6 +59,7 @@ export default function CompaniesTable({
       return '';
     }
   };
+
 
 
   const getSortIcon = (columnKey: SortKey) => {
@@ -174,13 +175,13 @@ export default function CompaniesTable({
                   </div>
                 </TableCell>
               
-              <TableCell className="text-sm">{company.cohort}</TableCell>
+              <TableCell className="text-sm">{company.cohort || ''}</TableCell>
               
-              <TableCell className="text-sm">{company.location}</TableCell>
+              <TableCell className="text-sm">{company.location || ''}</TableCell>
               
               <TableCell>
                 <div className="text-sm text-gray-600">
-                  {company.description}
+                  {company.description || ''}
                 </div>
               </TableCell>
               
@@ -208,14 +209,14 @@ export default function CompaniesTable({
                     <button
                       className="h-8 w-8 p-0 flex items-center justify-center cursor-pointer"
                       onClick={() => {
-                        if (company.startupsForRestOfUsSearchLink) {
-                          window.open(company.startupsForRestOfUsSearchLink, '_blank');
-                        }
+                        const searchUrl = `https://www.google.com/search?q=site:startupsfortherestofus.com "${company.name}"`;
+                        window.open(searchUrl, '_blank');
                       }}
                       onMouseDown={(e) => {
-                        if (e.button === 1 && company.startupsForRestOfUsSearchLink) {
+                        if (e.button === 1) {
                           e.preventDefault();
-                          window.open(company.startupsForRestOfUsSearchLink, '_blank');
+                          const searchUrl = `https://www.google.com/search?q=site:startupsfortherestofus.com "${company.name}"`;
+                          window.open(searchUrl, '_blank');
                         }
                       }}
                       title={`Search for ${company.name} on Startups for the Rest of Us podcast`}

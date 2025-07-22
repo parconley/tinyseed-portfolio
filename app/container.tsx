@@ -16,6 +16,7 @@ interface ContainerProps {
   hideSearchBar?: boolean;
 }
 
+
 export default function Container({ 
   companies, 
   title = "TinySeed Portfolio Search",
@@ -89,49 +90,103 @@ export default function Container({
         name: company.name || ''
       }));
 
-      // If there's a search query, perform semantic search
+      // If there's a search query, perform hybrid search (text + semantic)
       if (query.trim()) {
         const queryEmbedding = await generateEmbedding(query);
+        const lowercaseQuery = query.toLowerCase();
         
-        // Calculate similarities for all companies
+        // Calculate similarities for all companies using hybrid approach
         searchResults = searchResults.map(company => {
-          if (queryEmbedding && company.embedding && company.embedding.length > 0) {
-            // Use semantic similarity for companies with embeddings
-            const similarity = cosineSimilarity(queryEmbedding, company.embedding);
-            return { ...company, similarity };
+          const companyText = company.description || '';
+          
+          const lowercaseText = companyText.toLowerCase();
+          
+          // 1. Exact text matching (ctrl+f style)
+          let textScore = 0;
+          if (lowercaseText.includes(lowercaseQuery)) {
+            textScore = 1.0; // Perfect match for exact substring
           } else {
-            // Fallback to text-based similarity
-            const companyText = [
-              company.name,
-              company.description,
-              company.category,
-              ...(company.tags || [])
-            ].filter(Boolean).join(' ');
-            
-            const lowercaseQuery = query.toLowerCase();
-            const lowercaseText = companyText.toLowerCase();
-            let textSimilarity = 0;
-            
-            if (lowercaseText.includes(lowercaseQuery)) {
-              textSimilarity = 0.8; // High similarity for exact matches
-            } else {
-              // Check for partial word matches
-              const queryWords = lowercaseQuery.split(' ').filter(w => w.length > 0);
-              const textWords = lowercaseText.split(' ').filter(w => w.length > 0);
-              const matchingWords = queryWords.filter(word => 
-                textWords.some(textWord => textWord.includes(word) || word.includes(textWord))
-              );
-              textSimilarity = queryWords.length > 0 ? (matchingWords.length / queryWords.length * 0.6) : 0;
-            }
-            
-            return { ...company, similarity: textSimilarity };
+            // Check for partial word matches
+            const queryWords = lowercaseQuery.split(' ').filter(w => w.length > 0);
+            const textWords = lowercaseText.split(' ').filter(w => w.length > 0);
+            const matchingWords = queryWords.filter(word => 
+              textWords.some(textWord => textWord.includes(word) || word.includes(textWord))
+            );
+            textScore = queryWords.length > 0 ? (matchingWords.length / queryWords.length) : 0;
           }
+          
+          // 2. Semantic similarity
+          let semanticScore = 0;
+          if (queryEmbedding && company.embedding && company.embedding.length > 0) {
+            semanticScore = cosineSimilarity(queryEmbedding, company.embedding);
+          }
+          
+          // 3. Hybrid scoring: prioritize exact matches, boost with semantic similarity
+          let finalScore;
+          if (textScore >= 0.8) {
+            // High text match - use text score with semantic boost
+            finalScore = Math.min(1.0, textScore + (semanticScore * 0.2));
+          } else if (textScore > 0) {
+            // Some text match - blend text and semantic
+            finalScore = (textScore * 0.7) + (semanticScore * 0.3);
+          } else {
+            // No text match - rely on semantic similarity only
+            finalScore = semanticScore * 0.8; // Slight penalty for no text match
+          }
+          
+          return { ...company, similarity: finalScore };
         });
 
-        // Filter out very low similarity results
-        searchResults = searchResults.filter(company => 
-          company.similarity !== undefined && company.similarity > 0.1
+        // Define generic terms that require explicit matching rather than semantic similarity
+        const genericTerms = [
+          'real estate', 'ai', 'saas', 'fintech', 'finance', 'marketing', 'sales', 
+          'analytics', 'data', 'software', 'platform', 'app', 'tool', 'service',
+          'business', 'startup', 'tech', 'crm', 'hr', 'automation', 'api'
+        ];
+        
+        const isGenericQuery = genericTerms.some(term => 
+          lowercaseQuery.includes(term) || term.includes(lowercaseQuery)
         );
+        
+        // Use much stricter semantic thresholds for generic terms
+        const minSimilarity = isGenericQuery 
+          ? (query.length <= 8 ? 0.65 : 0.55) // High threshold for generic terms
+          : (query.length <= 3 ? 0.75 : // Very short specific queries
+             query.length <= 8 ? 0.5 : // Medium specific queries  
+             0.4); // Longer specific queries
+        
+        const semanticResults = searchResults.filter(company => 
+          company.similarity !== undefined && company.similarity >= minSimilarity
+        );
+        
+        // Add fallback text matching for both generic and specific terms
+        const lowSemanticResults = searchResults.filter(company => 
+          company.similarity !== undefined && company.similarity < minSimilarity
+        );
+        
+        const fallbackResults = lowSemanticResults.filter(company => {
+          const companyText = (company.description || '').toLowerCase();
+          
+          if (isGenericQuery) {
+            // For generic terms, require exact text match as fallback
+            return companyText.includes(lowercaseQuery);
+          } else {
+            // For specific terms, allow partial word matching
+            const queryWords = lowercaseQuery.split(' ').filter(w => w.length >= 4);
+            return queryWords.length > 0 && 
+                   queryWords.some(word => companyText.includes(word));
+          }
+        });
+        
+        // Combine semantic results with fallback word matches, removing duplicates
+        const combinedResults = [...semanticResults];
+        fallbackResults.forEach(fallback => {
+          if (!combinedResults.find(existing => existing.id === fallback.id)) {
+            combinedResults.push(fallback);
+          }
+        });
+        
+        searchResults = combinedResults;
         
         setSortKey('similarity');
         setSortOrder('desc');
@@ -182,6 +237,7 @@ export default function Container({
     setFilteredCompanies(companies);
   }, [companies]);
 
+
   // Handle external search changes
   useEffect(() => {
     if (searchQuery || Object.keys(searchFilters).length > 0) {
@@ -214,6 +270,7 @@ export default function Container({
             categories={filterOptions.categories}
             cohorts={filterOptions.cohorts}
             locations={filterOptions.locations}
+            searchQuery={searchQuery}
           />
         </div>
       )}
@@ -238,6 +295,7 @@ export default function Container({
             </div>
           </div>
         )}
+
 
         {/* Results */}
         <div className="bg-white rounded-lg shadow-sm border">

@@ -72,6 +72,7 @@ export default function Page() {
           categories={filterOptions.categories}
           cohorts={filterOptions.cohorts}
           locations={filterOptions.locations}
+          searchQuery={searchQuery}
         />
 
         {/* Search Section */}
@@ -123,7 +124,7 @@ export default function Page() {
             <Link href="https://www.startupsfortherestofus.com/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Startups for the Rest of Us
             </Link>{' '}
-            episodes (note: the podcast link detection isn&apos;t 100% accurate).
+            episodes.
           </p>
           <p className="text-sm text-gray-600">
             Last updated July 21st, 2025 with up to the 2025 Spring Cohort.

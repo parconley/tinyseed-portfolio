@@ -22,7 +22,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
  
-    --accent: 142 69% 48%;
+    --accent: 210 40% 96.1%;
     --accent-foreground: 0 0% 100%;
  
     --destructive: 0 84.2% 60.2%;
@@ -112,13 +112,6 @@
     background-color: #1e3a8a;
   }
   
-  .text-tinyseed-green {
-    color: #059669;
-  }
-  
-  .bg-tinyseed-green {
-    background-color: #059669;
-  }
 }
 
 /* Backdrop blur support for older browsers */
