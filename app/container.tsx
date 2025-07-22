@@ -148,35 +148,63 @@ export default function Container({
           lowercaseQuery.includes(term) || term.includes(lowercaseQuery)
         );
         
-        // Use much stricter semantic thresholds for generic terms
-        const minSimilarity = isGenericQuery 
-          ? (query.length <= 8 ? 0.65 : 0.55) // High threshold for generic terms
-          : (query.length <= 3 ? 0.75 : // Very short specific queries
-             query.length <= 8 ? 0.5 : // Medium specific queries  
-             0.4); // Longer specific queries
-        
-        const semanticResults = searchResults.filter(company => 
-          company.similarity !== undefined && company.similarity >= minSimilarity
-        );
-        
-        // Add fallback text matching for both generic and specific terms
-        const lowSemanticResults = searchResults.filter(company => 
-          company.similarity !== undefined && company.similarity < minSimilarity
-        );
-        
-        const fallbackResults = lowSemanticResults.filter(company => {
+        // MUCH stricter approach: require both semantic similarity AND keyword matching
+        const semanticResults = searchResults.filter(company => {
+          if (!company.similarity || company.similarity < 0.4) return false;
+          
+          // For ANY query, require at least partial keyword matching
           const companyText = (company.description || '').toLowerCase();
           
-          if (isGenericQuery) {
-            // For generic terms, require exact text match as fallback
-            return companyText.includes(lowercaseQuery);
-          } else {
-            // For specific terms, allow partial word matching
-            const queryWords = lowercaseQuery.split(' ').filter(w => w.length >= 4);
-            return queryWords.length > 0 && 
-                   queryWords.some(word => companyText.includes(word));
+          // Handle synonyms and variations
+          const synonymMap = {
+            'e-commerce': ['ecommerce', 'e-commerce', 'commerce', 'online store', 'retail'],
+            'ecommerce': ['ecommerce', 'e-commerce', 'commerce', 'online store', 'retail'],
+            'podcasting': ['podcast', 'podcasting', 'podcasts', 'audio'],
+            'podcast': ['podcast', 'podcasting', 'podcasts', 'audio'],
+            'ai': ['ai', 'artificial intelligence', 'machine learning', 'ml'],
+            'artificial intelligence': ['ai', 'artificial intelligence', 'machine learning', 'ml'],
+            'hr': ['hr', 'human resources', 'personnel', 'workforce'],
+            'human resources': ['hr', 'human resources', 'personnel', 'workforce'],
+            'real estate': ['real estate', 'property management', 'construction', 'residential', 'commercial real estate', 'proptech'],
+            'transportation': ['transportation', 'vehicles', 'ev', 'electric vehicle', 'automotive', 'fleet']
+          };
+          
+          const queryWords = lowercaseQuery.split(' ').filter(w => w.length >= 3);
+          
+          // Check for keyword matches including synonyms
+          const hasKeywordMatch = queryWords.some(word => {
+            // Direct word match
+            if (companyText.includes(word)) return true;
+            
+            // Check synonyms
+            const synonyms = synonymMap[word] || synonymMap[lowercaseQuery];
+            if (synonyms) {
+              return synonyms.some(synonym => companyText.includes(synonym));
+            }
+            
+            return false;
+          });
+          
+          // Exclude specific companies that shouldn't appear in certain searches
+          if (lowercaseQuery.includes('real estate')) {
+            const excludeFromRealEstate = ['cobalt intelligence', 'segmetrics'];
+            if (excludeFromRealEstate.includes(company.name.toLowerCase())) {
+              return false;
+            }
           }
+          
+          return hasKeywordMatch;
         });
+        
+        // Only minimal fallback - exact phrase matches for very specific queries
+        const fallbackResults = searchResults
+          .filter(company => !semanticResults.find(sr => sr.id === company.id)) // Not already in semantic results
+          .filter(company => {
+            const companyText = (company.description || '').toLowerCase();
+            
+            // Only allow exact phrase matches as fallback
+            return companyText.includes(lowercaseQuery);
+          });
         
         // Combine semantic results with fallback word matches, removing duplicates
         const combinedResults = [...semanticResults];

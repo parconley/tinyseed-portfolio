@@ -1,43 +1,56 @@
 # TinySeed Portfolio 🌱
 
-[**TinySeed Portfolio**](https://tinyseedportfolio.com/) uses _semantic similarity_ to search TinySeed's entire portfolio of accelerator-backed companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broad like "sustainable agriculture" as well as specific ideas like "developer productivity tools" and see who's building in the space (at least, in the TinySeed community).
+[**TinySeed Portfolio**](https://tinyseedportfolio.com/) uses _hybrid AI-powered search_ to find companies across TinySeed's entire portfolio of accelerator-backed companies. It combines semantic understanding with precise keyword matching and synonym handling, letting you search for broad concepts like "real estate technology" or specific terms like "CRM" and discover exactly what you're looking for.
 
 ![Screen recording of a search results page on TinySeed Portfolio](/public/tinyseed-portfolio-recording.gif)
 
-Unlike the simple text search box in TinySeed's [portfolio page](https://tinyseed.com/portfolio), semantic search means this search bar doesn't need you to get the keywords exactly right, only close enough to what startups are building, to find them.
+Unlike simple keyword search, this intelligent search understands variations and synonyms (e.g., "e-commerce" finds "ecommerce", "AI" finds "artificial intelligence"), while ensuring results are precisely relevant to your query.
 
 TinySeed Portfolio is built with [Next.js 14](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). It uses [sentence-transformers](https://www.sbert.net/) for semantic indexing and search. The dataset is built by scraping TinySeed's portfolio page and enriching it with additional company information.
 
 ## How it works
 
-TinySeed Portfolio performs semantic search using transformer-based language models to understand the conceptual similarity between search queries and company descriptions. This is particularly valuable for the TinySeed ecosystem where companies are often working on innovative solutions that don't fit neatly into traditional categories.
+TinySeed Portfolio uses a **hybrid search approach** that combines the best of both worlds:
 
-The semantic search is powered by `sentence-transformers/all-MiniLM-L6-v2`, which computes sentence/paragraph embeddings for every company description. When you search, the system finds companies whose descriptions are semantically similar to your query, even if they don't contain the exact keywords you used.
+### 1. **Semantic Understanding**
+The search is powered by `all-mpnet-base-v2`, an advanced transformer model that computes high-dimensional embeddings for every company description. This allows the system to understand conceptual similarity between your search query and company descriptions.
 
-There's a practical reason a sophisticated model is needed for TinySeed Portfolio: startup pitches and descriptions tend to involve lots of industry-specific terminology and often speak about problems and solutions rather than just products. Transformer-based models excel at understanding these nuanced descriptions and finding conceptual similarities.
+### 2. **Precise Keyword Matching**
+Every search result must contain at least one significant keyword from your query in the company description. This ensures results are directly relevant to what you're searching for.
 
-Once sentence embeddings are used to compute semantic "neighbors" of an idea or company description, TinySeed Portfolio collects and displays rich metadata about each company:
+### 3. **Intelligent Synonym Handling**
+The system automatically expands searches with common variations and synonyms:
+- "E-commerce" → finds "ecommerce", "commerce", "online store", "retail"
+- "Real Estate" → finds "property", "construction", "residential", "commercial"
+- "AI" → finds "artificial intelligence", "machine learning", "ML"
+- "Transportation" → finds "vehicles", "EV", "electric vehicle", "automotive"
+
+This hybrid approach eliminates irrelevant results while maintaining intelligent understanding of concepts and terminology variations.
+
+The search results are then ranked by semantic similarity and presented with rich metadata for each company:
 
 - Company name, website, and location
-- One-line and extended descriptions
+- Detailed company descriptions
 - Cohort/batch information (e.g., "Spring 2025")
 - Geographic region (Americas, EMEA)
-- Industry tags and categories
-- Founder information (where available)
-- Social media and other relevant links
+- Podcast appearance status (Startups for the Rest of Us)
+- Crunchbase links and company profiles
+- Direct links to company websites
 
-The UI then presents all of this information in an intuitive, searchable interface that makes it easy to discover relevant companies in the TinySeed ecosystem.
+The UI presents all of this information in an intuitive interface that makes it easy to discover precisely relevant companies in the TinySeed ecosystem.
 
 ### Known features and capabilities
 
 The current implementation of TinySeed Portfolio includes several powerful features:
 
-- **Semantic search**: Find companies by concepts, not just keywords
-- **Advanced filtering**: Filter by cohort, region, industry, and more
+- **Hybrid AI search**: Combines semantic understanding with precise keyword matching
+- **Synonym handling**: Automatically handles variations (e-commerce/ecommerce, AI/artificial intelligence)
+- **Two-stage filtering**: Results must pass both semantic similarity and keyword relevance tests
+- **Podcast integration**: Shows which companies have appeared on Startups for the Rest of Us
+- **Advanced filtering**: Filter by cohort, region, and podcast appearances
 - **Cohort views**: Browse companies by their TinySeed batch
-- **Company details**: Rich information pages for each portfolio company
-- **Similar companies**: Discover related startups based on semantic similarity
-- **Real-time search**: Instant results as you type
+- **Company details**: Rich information including Crunchbase links and descriptions
+- **Real-time search**: Instant, precise results as you type
 
 ## Updating the dataset
 

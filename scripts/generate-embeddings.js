@@ -9,7 +9,7 @@ const companies = JSON.parse(fs.readFileSync(companiesFile, 'utf8'));
 
 async function generateEmbedding(text) {
   try {
-    const response = await fetch('http://localhost:3000/api/similarity', {
+    const response = await fetch('http://localhost:3002/api/similarity', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ async function processCompanies() {
 }
 
 // Check if server is running
-fetch('http://localhost:3000/api/similarity')
+fetch('http://localhost:3002/api/similarity')
   .then(() => {
     console.log('✅ API server detected, starting embedding generation...');
     processCompanies();

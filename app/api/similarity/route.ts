@@ -14,7 +14,7 @@ async function getEmbedder() {
     try {
       embedder = await pipeline(
         'feature-extraction',
-        'Xenova/all-MiniLM-L6-v2',
+        'Xenova/all-mpnet-base-v2',
         { 
           quantized: true,
           revision: 'main'
@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       embedding,
       text: text.slice(0, 100) + (text.length > 100 ? '...' : ''), // Return truncated text for verification
-      model: 'all-MiniLM-L6-v2',
+      model: 'all-mpnet-base-v2',
       dimensions: embedding.length
     });
 
@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
 export async function GET() {
   return NextResponse.json({
     message: 'Similarity API is running',
-    model: 'all-MiniLM-L6-v2',
+    model: 'all-mpnet-base-v2',
     methods: ['POST'],
     usage: {
       endpoint: '/api/similarity',

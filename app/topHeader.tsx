@@ -24,26 +24,28 @@ export default function TopHeader({
   currentFilters = {}
 }: TopHeaderProps) {
   const suggestions = [
-    "CRM",
-    "E-commerce",
-    "Human Resources",
-    "Finance",
     "Real Estate",
-    "Industrials",
-    "Service Businesses",
+    "AI",
+    "E-commerce",
+    "Sales",
+    "Human Resources",
+    "Video",
     "Marketing",
-    "Education",
     "Transportation",
-    "Consumer",
+    "Legal",
+    "Service Businesses",
     "Email",
-    "Supply Chain and Logistics",
-    "Churches"
+    "Payments",
+    "Biotech",
+    "Consumer",
+    "CRM",
+    "No Code"
   ];
 
   return (
     <div className="bg-slate-800 rounded-lg p-6 text-white mb-4">
       <h1 className="text-base font-bold text-white mb-4 text-left">
-        Semantic search over every TinySeed portfolio company
+        Intelligent search over every TinySeed portfolio company
       </h1>
       
       <p className="text-sm text-gray-300 mb-4 text-left">
@@ -59,8 +61,8 @@ export default function TopHeader({
       </p>
       
       <p className="text-sm text-gray-300 mb-4 text-left">
-        Search through all their portfolio companies using semantic search. Instead of requiring exact keyword matches, it uses machine learning 
-        to find companies that are conceptually similar to what you&apos;re looking for.
+        Search through all their portfolio companies using hybrid AI-powered search. It combines semantic understanding with precise keyword matching 
+        to find exactly what you&apos;re looking for while handling synonyms and variations automatically.
       </p>
 
       <p className="text-sm text-gray-300 mb-6 text-left">
