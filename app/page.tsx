@@ -37,7 +37,7 @@ export default function Page() {
         {/* Navigation */}
         <div className="flex justify-between items-center mb-6">
           <div className="flex items-center">
-            <h1 className="text-lg font-bold text-gray-900">TinySeed Portfolio</h1>
+            <h1 className="text-lg font-bold text-gray-900">🌱 TinySeed Portfolio</h1>
           </div>
           <div className="flex space-x-6">
             <button
