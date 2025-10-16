@@ -37,7 +37,7 @@ export default function Page() {
         {/* Navigation */}
         <div className="flex justify-between items-center mb-6">
           <div className="flex items-center">
-            <h1 className="text-lg font-bold text-gray-900">🌱 TinySeed Portfolio</h1>
+            <h1 className="text-lg font-bold text-gray-900">🌱 TS Vibe Check</h1>
           </div>
           <div className="flex space-x-6">
             <button
@@ -100,7 +100,7 @@ export default function Page() {
             <Link href="https://parconley.com" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Parker Conley
             </Link>
-            . Claude Code helped me build this, using{' '}
+            , using{' '}
             <Link href="https://nabeelqu.co/" className="underline hover:opacity-80" style={{ color: '#D4A13C' }} target="_blank">
               Nabeel S. Qureshi
             </Link>&apos;s{' '}

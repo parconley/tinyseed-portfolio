@@ -45,7 +45,7 @@ export default function TopHeader({
   return (
     <div className="bg-slate-800 rounded-lg p-6 text-white mb-4">
       <h1 className="text-base font-bold text-white mb-4 text-left">
-        Intelligent search over every TinySeed portfolio company
+        Intelligent search over every portfolio company
       </h1>
       
       <p className="text-sm text-gray-300 mb-4 text-left">
