@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TinySeed Portfolio - Discover Innovative SaaS Companies',
-    template: '%s | TinySeed Portfolio'
+    default: 'TS Vibe Check - Discover Innovative SaaS Companies',
+    template: '%s | TS Vibe Check'
   },
   description: 'Explore TinySeed\'s portfolio of innovative SaaS companies. Use AI-powered search to discover companies by technology, industry, business model, and more. See how these founder-controlled businesses are building the future.',
   keywords: [
@@ -44,27 +44,27 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://portfolio.tinyseed.com',
-    siteName: 'TinySeed Portfolio',
-    title: 'TinySeed Portfolio - Discover Innovative SaaS Companies',
+    siteName: 'TS Vibe Check',
+    title: 'TS Vibe Check - Discover Innovative SaaS Companies',
     description: 'Explore TinySeed\'s portfolio of innovative SaaS companies. Use AI-powered search to discover companies by technology, industry, business model, and more.',
     images: [
       {
         url: '/tinyseed-og-image.png',
         width: 1200,
         height: 630,
-        alt: 'TinySeed Portfolio - Discover Innovative SaaS Companies',
+        alt: 'TS Vibe Check - Discover Innovative SaaS Companies',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TinySeed Portfolio - Discover Innovative SaaS Companies',
+    title: 'TS Vibe Check - Discover Innovative SaaS Companies',
     description: 'Explore TinySeed\'s portfolio of innovative SaaS companies. Use AI-powered search to discover companies by technology, industry, and business model.',
     creator: '@tinyseed',
     site: '@tinyseed',
     images: {
       url: '/tinyseed-og-image.png',
-      alt: 'TinySeed Portfolio',
+      alt: 'TS Vibe Check',
     },
   },
   verification: {

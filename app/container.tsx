@@ -17,9 +17,9 @@ interface ContainerProps {
 }
 
 
-export default function Container({ 
-  companies, 
-  title = "TinySeed Portfolio Search",
+export default function Container({
+  companies,
+  title = "TS Vibe Check Search",
   subtitle = "Discover and explore our portfolio companies using semantic search",
   searchQuery = "",
   searchFilters = {},
