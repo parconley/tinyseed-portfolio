@@ -1,16 +1,16 @@
-# TinySeed Portfolio 🌱
+# TS Vibe Check 🌱
 
-[**TinySeed Portfolio**](https://tinyseedportfolio.com/) uses _hybrid AI-powered search_ to find companies across TinySeed's entire portfolio of accelerator-backed companies. It combines semantic understanding with precise keyword matching and synonym handling, letting you search for broad concepts like "real estate technology" or specific terms like "CRM" and discover exactly what you're looking for.
+[**TS Vibe Check**](https://tinyseedportfolio.com/) uses _hybrid AI-powered search_ to find companies across TinySeed's entire portfolio of accelerator-backed companies. It combines semantic understanding with precise keyword matching and synonym handling, letting you search for broad concepts like "real estate technology" or specific terms like "CRM" and discover exactly what you're looking for.
 
-![Screen recording of a search results page on TinySeed Portfolio](/public/tinyseed-portfolio-recording.gif)
+![Screen recording of a search results page on TS Vibe Check](/public/tinyseed-portfolio-recording.gif)
 
 Unlike simple keyword search, this intelligent search understands variations and synonyms (e.g., "e-commerce" finds "ecommerce", "AI" finds "artificial intelligence"), while ensuring results are precisely relevant to your query.
 
-TinySeed Portfolio is built with [Next.js 14](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). It uses [sentence-transformers](https://www.sbert.net/) for semantic indexing and search. The dataset is built by scraping TinySeed's portfolio page and enriching it with additional company information.
+TS Vibe Check is built with [Next.js 14](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). It uses [sentence-transformers](https://www.sbert.net/) for semantic indexing and search. The dataset is built by scraping TinySeed's portfolio page and enriching it with additional company information.
 
 ## How it works
 
-TinySeed Portfolio uses a **hybrid search approach** that combines the best of both worlds:
+TS Vibe Check uses a **hybrid search approach** that combines the best of both worlds:
 
 ### 1. **Semantic Understanding**
 The search is powered by `all-mpnet-base-v2`, an advanced transformer model that computes high-dimensional embeddings for every company description. This allows the system to understand conceptual similarity between your search query and company descriptions.
@@ -41,7 +41,7 @@ The UI presents all of this information in an intuitive interface that makes it 
 
 ### Known features and capabilities
 
-The current implementation of TinySeed Portfolio includes several powerful features:
+The current implementation of TS Vibe Check includes several powerful features:
 
 - **Hybrid AI search**: Combines semantic understanding with precise keyword matching
 - **Synonym handling**: Automatically handles variations (e-commerce/ecommerce, AI/artificial intelligence)
@@ -70,7 +70,7 @@ The updated files should be checked into the repository and deployed to producti
 
 ## Development
 
-TinySeed Portfolio is built with modern web technologies. Here's how to get started:
+TS Vibe Check is built with modern web technologies. Here's how to get started:
 
 ### Prerequisites
 
@@ -117,7 +117,7 @@ tinyseed-portfolio/
 
 ## Deployment
 
-TinySeed Portfolio is deployed using [Vercel](https://vercel.com/), which provides automatic deployments, serverless functions, and optimized performance for Next.js applications.
+TS Vibe Check is deployed using [Vercel](https://vercel.com/), which provides automatic deployments, serverless functions, and optimized performance for Next.js applications.
 
 ### Deploying to Vercel
 
